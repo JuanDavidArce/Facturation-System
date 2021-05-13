@@ -1,3 +1,5 @@
+from Factura import *
+
 class Cliente:
     def __init__(self,nombre,cedula):
         self.__nombre=nombre
@@ -20,7 +22,15 @@ class Cliente:
     @cedula.setter
     def cedula(self,nuevaCedula):
         self.__cedula=nuevaCedula
+
+    @property
+    def facturas(self):
+        return self.__facturas
+
+    def compraRealizada(self,factura):
+        self.__facturas.append(factura)
     
-    
+    def __eq__(self, another):
+        return self.__cedula==another   
 
     
