@@ -5,9 +5,9 @@ class ControlDeFertilizantes(ProductoControl):
         super().__init__(registroIca, nombreDeProducto, frecuenciaDeAplicacion, valorDelProducto)
     
     @property
-    def frecuenciaDeAplicacion(self):
-        return self.__frecuenciaDeAplicacion
-        
-    @frecuenciaDeAplicacion.setter
-    def frecuenciaDeAplicacion(self,nuevaFrecuencia):
-        self.__frecuenciaDeAplicacion=nuevaFrecuencia
+    def fechaUltimaAplicacion(self):
+        return self.__fechaUltimaAplicacion
+
+    @fechaUltimaAplicacion.setter
+    def frecuenciaDeAplicacion(self,nuevaFecha):
+        self.__fechaUltimaAplicacion=nuevaFecha
