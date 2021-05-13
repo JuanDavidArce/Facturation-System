@@ -66,7 +66,7 @@ def main():
 
         elif elecccion==0:
             break
-        input("Presione enter para otra seleccionar opcion")
+        input("Presione enter para seleccionar otra opcion")
 
 
 
