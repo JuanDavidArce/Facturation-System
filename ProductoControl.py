@@ -37,3 +37,4 @@ class ProductoControl:
     def valorDelProducto(self,nuevoValor):
         self.__valorDelProducto=nuevoValor
         
+    
